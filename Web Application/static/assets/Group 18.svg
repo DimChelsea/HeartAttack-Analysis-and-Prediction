@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="493.79" height="267.199" viewBox="0 0 493.79 267.199">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ed2e2d"/>
+      <stop offset="1" stop-color="#fc9191"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e96f6f"/>
+      <stop offset="1" stop-color="#f9ebec"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_18" data-name="Group 18" transform="translate(0 0.75)">
+    <g id="Group_13" data-name="Group 13" transform="translate(0 50.578)">
+      <path id="Path_306" data-name="Path 306" d="M626.191,416.24c-57.76-4.27-68.471-55.211-124.26-66.909-61.473-12.89-79.652,42.42-144.44,29.738-45.765-8.959-50.869-39.333-113.639-63.724A264.767,264.767,0,0,0,181.4,299.588V495.873a19.586,19.586,0,0,0,19.586,19.586H655.6a19.585,19.585,0,0,0,19.585-19.586V408.3C661.6,413.609,644.864,417.621,626.191,416.24Z" transform="translate(-181.398 -299.588)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_15" data-name="Group 15" transform="translate(0 48.504)" opacity="0.8">
+      <g id="Group_14" data-name="Group 14" transform="translate(0 0)">
+        <path id="Path_307" data-name="Path 307" d="M532.73,422.578c-14.868-2.314-20.813-7.739-43.544-9.558-37.628-3.012-48.739,9.66-70.1,8.5C363.853,418.5,353.2,298.528,307.575,297.489c-35.164-.8-45.945,51.924-96.647,58.413a82.61,82.61,0,0,1-29.531-1.733v141.67a19.586,19.586,0,0,0,19.586,19.586H655.6a19.585,19.585,0,0,0,19.585-19.586V334.763C643.748,389.043,582.693,430.354,532.73,422.578Z" transform="translate(-181.398 -297.48)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+    <path id="Path_308" data-name="Path 308" d="M332.969,274.731H284.826a13.276,13.276,0,0,1,0-26.551h48.142a13.276,13.276,0,0,1,0,26.551Z" transform="translate(-182.853 -248.18)" fill="#c6c6c6"/>
+    <path id="Path_309" data-name="Path 309" d="M514.319,324.031H466.177a13.275,13.275,0,1,1,0-26.55h48.142a13.275,13.275,0,1,1,0,26.55Z" transform="translate(-185.78 -248.976)" fill="#c6c6c6"/>
+    <text id="_2014" data-name="2014" transform="translate(103.803 17.251)" fill="#fff" font-size="17" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">2014</tspan></text>
+    <text id="_1995" data-name="1995" transform="translate(281.394 66.026)" fill="#fff" font-size="17" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1995</tspan></text>
+  </g>
+</svg>

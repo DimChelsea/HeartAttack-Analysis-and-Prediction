@@ -1,0 +1,644 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  nav a {
+    cursor: pointer;
+  }
+  /* Utilities */
+  a {
+    cursor: pointer;
+  }
+  .open {
+    display: block;
+  }
+  .close {
+    display: none;
+  }
+  #smallNav {
+    /* display: none; */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 5px #eee;
+    right: 0;
+    /* top: 50px; */
+  }
+  .pulseBackground {
+    background: url("../assets/Group\ 191.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 30px;
+  }
+  .statisticsBackground {
+    background: url("../assets/Group\ 191.svg");
+    height: 120px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    /* background-position-y: 100px; */
+    
+  }
+  #hamburgerMenu {
+    display: none;
+    cursor: pointer;
+  }
+  #smallNav ul {
+    margin: 0;
+    padding: 0;
+  }
+  #smallNav li {
+    list-style: none;
+    /* margin-bottom: 10px; */
+    padding: 5px 30px;
+  }
+  #smallNav li:hover {
+    color: #ef4f51;
+    background-color: #e7e7e7;
+  }
+  
+  .secondaryBtn {
+    color: white;
+    font-size: 19px;
+    border: 0px;
+    background-color: #ef4f51;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: opacity 600ms ease-out;
+    margin-top:15px
+  }
+  
+  html,
+  body {
+    scroll-padding-top: 100px;
+  }
+  .secondaryBtn:hover {
+    opacity: 0.9;
+  }
+  /*  */
+  body {
+    font-family: "Lato", sans-serif !important;
+  }
+  /* navbar */
+  nav {
+    box-shadow: 0px 18px 17px -10px rgba(228, 228, 228, 0.75);
+    -webkit-box-shadow: 0px 18px 17px -10px rgba(228, 228, 228, 0.75);
+    -moz-box-shadow: 0px 18px 17px -10px rgba(228, 228, 228, 0.75);
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+  }
+  h2:target {
+    scroll-margin-top: 50px;
+  }
+  
+  #navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    /* align-items: center; */
+    font-weight: normal;
+    font-size: 19px;
+  }
+  #navbar .logo {
+    align-self: flex-start;
+  }
+  #navbar .logo img {
+    width: 130px;
+  }
+  .menu {
+    margin-top: 3px;
+  }
+  .menu ul li {
+    display: inline-block;
+    list-style: none;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+  }
+  /* This is will apply on the navbar current page */
+  #currentTarget {
+    color: #ef4f51;
+    border-bottom: 3px solid #ef4f51;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  /* Main Section */
+  #main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    margin-top: 170px;
+    /* background: rgba(243, 243, 243, 0.5);
+    background-image: url("./assets/Path\ 290.png"); */
+    /* background: url("./assets/Path\ 290.png"); */
+    background-position: center;
+  }
+  .mainLogoIcon {
+    width: 50%;
+    /* margin-left: -30px;
+    margin-top: 35px; */
+  }
+  .logoIntroTitle {
+    /* justify-content: flex-start; */
+    display: flex;
+    align-items: flex-end;
+  }
+  .logoIntro {
+    margin-top: 35px;
+  }
+  
+  .logoIntro h1 {
+    font-size: 100px;
+    margin-left: -10px;
+  }
+  .logoIntro p {
+    color: #666666;
+    font-size: 19px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  .logoIntro .introImg {
+    width: 90%;
+    height: 420px;
+  }
+  .introImg img {
+    display: block;
+    /* height: 420px; */
+    width: 70%;
+    margin: auto auto;
+  }
+  
+  /* General Information section */
+  #generalInformation {
+    margin-top: 100px;
+    text-align: center;
+  }
+  #generalInformation h2 {
+    text-align: center;
+    margin: 40px 0;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+  }
+  #generalInformationCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+  
+  }
+  #generalInformationCards .infoCard {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(199, 199, 199);
+    overflow: hidden;
+  }
+  
+  #generalInformationCards .infoCard h4 {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  #generalInformationCards .infoCard img {
+    width: 100%;
+    display: block;
+    transition: transform 500ms ease-in;
+  }
+  #generalInformationCards .infoCard img:hover {
+    transform: scale(1.2);
+  
+  }
+  .gerneralInfoCardImgs {
+    overflow: hidden;
+    bottom: -36px;
+  }
+  #generalInformationCards .infoCard p {
+    padding: 10px 10px;
+    /* margin-bottom: 20px; */
+  }
+  .ParCard{
+    font-size: 16px;
+  }
+  /* .gerneralInfoCardImgs {
+    overflow: hidden;
+  } */
+  
+  /* Statistics section */
+  #statistics {
+    margin-top: 30px;
+  }
+  #statistics h2 {
+    text-align: center;
+    /* text-transform: uppercase; */
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  #statisticsCards {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 70px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .statisticsCard {
+    box-shadow: 0 0 10px #ddd;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 12px;
+    /* padding: 30px 10px; */
+  }
+  .statisticsCard img {
+    margin: 60px 0px;
+    width: 95%;
+    height: 200px;
+  }
+  .statisticsCard h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+  
+  }
+  
+  /* Symptoms Section */
+  #symptoms {
+    margin-top: 10px;
+    /* text-align: center; */
+  }
+  #symptoms h2 {
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    text-align: center;
+  }
+  #symptoms p {
+    color: #808080;
+    font-size: 18px;
+  }
+  #symptoms .symptomsIntro {
+    color: #666666;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .symptomsContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  #symtpoms-1 {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-column: 1/6;
+  }
+  #symtpoms-2 {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-column: 8/13;
+  }
+  .symptomsContainer #heartImg {
+    grid-column: 6/8;
+  }
+  .symptomsContainer #heartImg img {
+    width: 100%;
+  }
+  .symptomCard {
+    padding: 12px 5px;
+    box-shadow: 0px 0px 10px #ddd;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: color 2s ease-in-out;
+    display: flex;
+  }
+  .symptomCard img {
+    align-self: center;
+  }
+  .symptomCard p {
+    align-self: center;
+    margin: 0px;
+  }
+  
+  .symptomsIcons {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin: 0 10px;
+  }
+  
+  /* Preventions */
+  #preventions {
+    margin: 100px 0px;
+  }
+  #preventions h2 {
+    margin-bottom: 60px;
+    /* text-transform: uppercase; */
+    text-align: center;
+    font-weight: bold;
+  }
+  #preventions h4 {
+    font-size: 19px;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    font-size: 20px;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    /* -webkit-box-orient: vertical;  */
+  }
+  #preventionsCards {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .preventionCard {
+    /* border-radius: 500px; */
+  
+    text-align: center;
+  }
+  #preventions .imgFrame {
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 1000px;
+    margin-bottom: 15px;
+  }
+  .preventionCard img {
+    border-radius: 100px;
+    width: 100%;
+  }
+  #preventions .noImgFrame {
+    margin-top: 18px;
+  }
+  #preventions .vegaImg {
+    box-shadow: 0 0 0.5px #ddd;
+  }
+  
+  /* Patient Form */
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    /*font-weight: bold;*/
+  }
+  
+  #formSection h2 {
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  #patientForm {
+    box-shadow: 0 0 2px #707070;
+    /* border: 1px solid #cecece; */
+    padding: 70px 100px;
+    border-radius: 5px;
+  }
+  
+  #patientForm .question {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+  }
+  #patientForm .question .inputLabel {
+    /* grid-column: 1/2; */
+    /* margin-bottom: 5px; */
+    color: #808080;
+    font-size: 21px;
+    margin-left: 10px;
+  }
+  #patientForm .question .inputItem {
+    font-size: 20px;
+    grid-column: 2/6;
+  }
+  
+  .range-slider__value:after {
+    position: absolute;
+    top: 3px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #ef4f51;
+    border-bottom: 7px solid transparent;
+    content: "";
+  }
+  #analyzeBtn {
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    background-color: #ef4f51;
+    transition: background-color 300ms ease-in-out;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-top: 70px;
+  }
+  
+  #analyzeBtn:hover {
+    background-color: #e24c4f;
+  }
+  #analyzeBtnContainer {
+    text-align: center;
+  }
+  .RadioPlace{
+  margin-right: 70px;
+  }
+  .radioLabel {
+    font-size:20px;
+  }
+  /* Footer */
+  
+  footer {
+    margin-top: 50px;
+    height: 100px;
+    background-color: #343433;
+    color: white;
+    font-size: 20px;
+  }
+  footer ul {
+    margin: 0;
+  }
+  footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    transition: color 300ms ease-in-out;
+    /* margin-top: 15px; */
+  }
+  footer ul li:hover {
+    color: #ef4f51;
+  }
+  
+  footer .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 100%;
+    align-items: center;
+    /* flex-direction: row; */
+  }
+  footer .footerMenuContainer {
+    grid-column: 1/6;
+  }
+  footer .logoFooter {
+    grid-column: 6/7;
+    justify-self: flex-end;
+  }
+  .navContainer {
+    display: inline-block;
+  }
+  .footerHeartIcon {
+    width: 150px;
+  }
+  
+  
+  
+  
+  /* Media queries */
+  @media screen and (max-width: 992px) {
+    #smallNav {
+      top: 50px;
+    }
+    #hamburgerMenu {
+      display: block;
+    }
+    nav .menu {
+      display: none;
+    }
+    /* #main {
+      text-align: center;
+      grid-template-columns: repeat(1, 1fr);
+    } */
+    #main .logoIntro h1 {
+      font-size: 70px;
+    }
+    /* general information */
+    #generalInformationCards {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    #generalInformationCards #card-1 {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+    #generalInformationCards #card-2 {
+      grid-column: 3/5;
+      grid-row: 1/2;
+    }
+    #generalInformationCards #card-3 {
+      grid-column: 2/4;
+    }
+    /* Statistics */
+    #statisticsCards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #symptoms .symptomsContainer {
+      display: block;
+    }
+    #heartImg {
+      width: 30%;
+      margin: auto;
+      padding: 10px 0;
+    }
+    /* preventions */
+    #preventionsCards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    /* Form */
+    /* #patientForm .question .inputLabel {
+      font-size: 21px;
+    } */
+  
+    footer .footerContainer {
+      grid-template-rows: repeat(3, 1fr);
+      font-size: 20px;
+    }
+    footer .logoFooter {
+      grid-column: 1/7;
+      grid-row: 1/2;
+      justify-self: flex-start;
+      padding-left: 5px;
+      margin-top: 5px;
+  
+      /* margin-left: 15px; */
+    }
+    footer .logoFooter img {
+      width: 100px;
+    }
+  
+    .navContainer {
+      display: block;
+    }
+    .container-1 {
+      grid-column: 1/7;
+      grid-row: 2/3;
+      display: flex;
+      justify-content: space-between;
+    }
+    .container-2 {
+      grid-column: 1/7;
+      grid-row: 3/4;
+      display: flex;
+      justify-content: space-between;
+    }
+    footer ul li {
+      display: inline-block;
+    }
+    .footerMenuContainer ul {
+      padding: 0;
+    }
+    .footerHeartIcon {
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    #generalInformationCards {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+    #generalInformationCards #card-1 {
+      grid-column: 1;
+      grid-row: 1/2;
+    }
+    #generalInformationCards #card-2 {
+      grid-column: 1;
+      grid-row: 2/3;
+    }
+    #generalInformationCards #card-3 {
+      grid-column: 1;
+      grid-row: 3/4;
+    }
+    /* Statistics */
+    #statisticsCards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    /* #patientForm .question .inputLabel {
+      font-size: 18px;
+    } */
+  }
+  @media screen and (max-width: 425px) {
+    footer .logoFooter img {
+      width: 60px;
+    }
+  }
+  @media screen and (max-width: 755px){
+    #patientForm{
+      padding:3px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 514px){
+    #patientForm{
+      font-size: 14px;
+      font-weight:normal;
+    }
+    .RadioPlace{
+      margin-right: 14px;
+      }
+      .radioLabel {
+        font-size:15px;
+      }
+      #patientForm .question {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #patientForm .question .inputLabel {
+      font-size:14px;
+    }
+  }

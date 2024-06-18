@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="490.757" height="318.63" viewBox="0 0 490.757 318.63">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#383837"/>
+      <stop offset="1" stop-color="#c9c5c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e96f6f"/>
+      <stop offset="0.523" stop-color="#fb9f9f"/>
+      <stop offset="1" stop-color="#f9e4e5"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_176" data-name="Group 176" transform="translate(-231.041 -3341.411)">
+    <path id="Path_471" data-name="Path 471" d="M237.742,405.32c5.35-5.186,5.885-128.264,34.573-138.562,14.049-2.392,24.144,20.6,36.78,18.372,17.157-3.029,7.778-14.494,25.746-18.372,12.688-2.739,16.653,19.146,28.046,18.372,32.478-2.2,35.951,35.883,56,35.883,13.465,0,20.348,26.478,40.049,32.664,14.775,4.64,20.36-8.245,40.281-6.713,23.587,1.816,25.025,20.595,51.122,24.787,21.152,3.4,25.786-8.038,43.38-1.548,16.417,6.057,18.739,18.364,32.532,18.075,9.641-.2,13.16-40.914,25.305-39.768,8.894.838,9.427,4.342,16.006,4.132,12.986-.417,16.831-14.491,26.856-16.009,8.519-1.292,33.727,28.53,34.08,68.687Z" transform="translate(-6.701 3232.859)" opacity="0.7" fill="url(#linear-gradient)"/>
+    <path id="Path_472" data-name="Path 472" d="M237.742,457.453c3.729-9.369,17.166-25.75,26.258-30.284,4.36-2.173,8.078-.555,11.6-1.158,17.075-2.916,19.525-42.286,29.964-42.658,7.544-.268,10.5,20.156,21.835,20.823,6.551.384,8.391-6.268,16.252-6.6,10.866-.463,14.683,11.944,21.835,12.188,17.34.591,27.541-71.235,41.134-71.095,14.674.149,22.136,84.038,46.722,85.821,9.436.686,20.268-10.811,32.5-5.076,5.128,2.4,5.783,5.622,9.141,5.585,11.2-.125,14.693-36.085,23.87-36.564,10.869-.567,15.951,49.394,31.993,50.784,13.3,1.152,22.633-32.082,35.546-29.964,10.747,1.764,11.825,26.009,21.329,26.408,9.552.4,13.535-23.882,28.946-25.39,5.027-.494,5.4,2.014,12.7,3.047,16.74,2.367,25.454-9.309,35.549-9.141,8.87.146,30.1,16.021,43.59,53.276Z" transform="translate(-6.701 3180.725)" opacity="0.7" fill="url(#linear-gradient-2)"/>
+    <text id="_1970" data-name="1970" transform="translate(396.164 3476.104)" fill="gray" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1970</tspan></text>
+    <text id="_1980" data-name="1980" transform="translate(345.489 3657.041)" fill="gray" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1980</tspan></text>
+    <text id="_1990" data-name="1990" transform="translate(460.404 3657.041)" fill="gray" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1990</tspan></text>
+    <text id="_2000" data-name="2000" transform="translate(575.319 3657.041)" fill="gray" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">2000</tspan></text>
+    <text id="_2010" data-name="2010" transform="translate(690.235 3657.041)" fill="gray" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">2010</tspan></text>
+    <text id="_550_000" data-name="550,000" transform="translate(355.407 3350.411)" fill="gray" font-size="9" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">550,000</tspan></text>
+    <text id="_500_000" data-name="500,000" transform="translate(355.407 3386.273)" fill="gray" font-size="9" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">500,000</tspan></text>
+    <text id="_450_000" data-name="450,000" transform="translate(355.407 3422.135)" fill="gray" font-size="9" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">450,000</tspan></text>
+    <text id="_400_000" data-name="400,000" transform="translate(355.407 3457.998)" fill="gray" font-size="9" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">400,000</tspan></text>
+    <rect id="Rectangle_1131" data-name="Rectangle 1131" width="30.015" height="28.765" rx="5" transform="translate(591.378 3347.34)" fill="#9f9e9e"/>
+    <rect id="Rectangle_1132" data-name="Rectangle 1132" width="30.015" height="28.765" rx="5" transform="translate(591.378 3383.608)" fill="#e96f6f"/>
+    <text id="female" transform="translate(632.649 3399.861)" fill="gray" font-size="10" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">female</tspan></text>
+    <text id="Male" transform="translate(632.649 3363.593)" fill="gray" font-size="10" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Male</tspan></text>
+  </g>
+</svg>

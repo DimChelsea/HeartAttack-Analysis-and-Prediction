@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+{#    <div class="bg-modal">#}
+    {#        <div class="modal-contents">#}
+    {#            <div class="close">#}
+    {#                +#}
+    {#            </div>#}
+    {#            <img tabindex="0" id="outputImage" src="{{url_for('static',filename='risk.svg')}}" alt="you are safe" height=100% width=100%>#}
+    {#        </div>#}
+    {#    </div>#}
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="shortcut icon"
+          href="{{url_for('static',filename='assets/Favicon.png')}}"
+          type="image/x-icon"
+        />
+
+    <!-- <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/inputRange.css" />
+    <link rel="stylesheet" href="/styles/inputRadio.css" />
+    <link rel="stylesheet" href="/styles/dropdown.css" /> -->
+
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/inputRange.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/inputRadio.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/dropdown.css')}}" />
+
+
+
+    <!-- Compiled and minified CSS -->
+
+    <!-- Compiled and minified JavaScript -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <title>HeartGuard</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div id="navbar">
+          <div class="logo">
+            <!-- <h1>HeartGuard</h1> -->
+            <img class="navHeartIcon" src="{{url_for('static',filename='assets/Logo2.png')}}" alt="" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <a data-target="main" id="currentTarget">Home</a>
+              </li>
+              <li>
+                <a data-target="generalInformation">General information</a>
+              </li>
+              <!-- <li>
+                <a data-target="statistics">Statistics</a>
+              </li> -->
+              <li>
+                <a data-target="symptoms">Symptoms</a>
+              </li>
+              <li>
+                <a data-target="preventions">Prevention</a>
+              </li>
+              <li>
+                <a data-target="formSection">Prediction</a>
+              </li>
+            </ul>
+          </div>
+
+        <!--  <div class="menu">
+            <ul>
+              <li>
+                <a data-target="main" id="currentTarget">Home</a>
+              </li>
+              <li>
+                <a data-target="generalInformation">General information</a>
+              </li>
+              <li>
+                <a data-target="statistics">Statistics</a>
+              </li>
+              <li>
+                <a data-target="symptoms">Symptoms</a>
+              </li>
+              <li>
+                <a data-target="preventions">Prevention</a>
+              </li>
+              <li>
+                <a data-target="formSection">Prediction</a>
+              </li>
+            </ul>
+          </div> -->
+          <div id="hamburgerMenu">
+            <img src="{{url_for('static',filename='assets/Icon ionic-ios-menu.svg')}}" alt="" />
+          </div>
+          <div id="smallNav" class="close">
+            <ul>
+              <li>
+                <a data-target="main" id="currentTarget">Home</a>
+              </li>
+              <li>
+                <a data-target="generalInformation">General information</a>
+              </li>
+              <!-- <li>
+                <a data-target="statistics">Statistics</a>
+              </li> -->
+              <li>
+                <a data-target="symptoms">Symptoms</a>
+              </li>
+              <li>
+                <a data-target="preventions">Prevention</a>
+              </li>
+              <li>
+                <a data-target="formSection">Prediction</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="pulseBackground">
+        <main class="container" id="main">
+          <div class="logoIntro">
+            <div class="logoIntroTitle">
+              <img
+                class="mainLogoIcon"
+                src="{{url_for('static',filename='assets/Logo1.png')}}"
+                alt="logo"
+              />
+            </div>
+
+            <p>Nothing radiates beauty more than a healthy heart. <br>
+            Interested in predicting your risk of a heart attack? <br>
+            We're here to assist you.</p>
+           
+            
+            <button class="secondaryBtn" onclick="this.#formSection">Predict My Risk</button>
+          </div>
+          <div class="introImg">
+            <img
+              src="{{url_for('static',filename='assets/doctor_14_copy.png')}}"
+              alt="Doctor examines heart"
+            />
+          </div>
+        </main>
+      </div>
+
+       <!-- General information Section -->
+       <div class="">
+        <section class="container" id="generalInformation">
+          <h2 id="title">General Information</h2>
+          <div id="generalInformationCards">
+            <div class="infoCard" id="card-1">
+              <div class="gerneralInfoCardImgs">
+                <img src="{{url_for('static',filename='assets/heartAttack.png')}}" alt="heart attack" />
+              </div>
+              <h5 style="font-weight: bold; margin:15px;">What is a Heart Attack?</h5 >
+              <p class="ParCard">
+                A heart attack occurs when the flow of blood to the heart is
+                blocked. The blockage is most often a build-up of fat, cholesterol
+                and other substances, which form a plaque in the arteries that
+                feed the heart (coronary arteries).
+              </p>
+            </div>
+            <div class="infoCard" id="card-2">
+              <div class="gerneralInfoCardImgs">
+                <img src="{{url_for('static',filename='assets/heartInHands.png')}}" alt="heart in hands" />
+              </div>
+  
+              <h5 style="font-weight: bold; margin:15px;">What should I know about my heart?</h5 >
+              <p class="ParCard">
+                The heart is the hardest working muscle in the human body. The
+                heart is located almost in the centre of the chest. The adult
+                human heart is about the size of a fist. The heart beats at an
+                average rate of 80 times a minute.
+              </p>
+            </div>
+            <div class="infoCard" id="card-3">
+              <div class="gerneralInfoCardImgs">
+                <img src="{{url_for('static',filename='assets/OldWomanTired.png')}}" alt="Old woman sick" />
+              </div>
+              <h5 style="font-weight: bold; margin:15px;">Does stress affect your heart?</h5 >
+              <p class="ParCard">
+                Stress can increase inflammation in your body, which in turn is
+                linked to factors that can harm your heart, such as high blood
+                pressure and lower “good” HDL cholesterol, Blaha says.
+              </p>
+            </div>
+          </div>
+        </section>
+        </div>
+
+        <!-- Symptoms section -->
+      <section class="container" id="symptoms">
+        <br><br><br>
+        <h2>Symptoms</h2>
+        <p class="symptomsIntro">
+          A heart attack or stroke may be the first sign of underlying disease.
+          Symptoms of a heart attack include:
+        </p>
+        <div class="symptomsContainer">
+          <div id="symtpoms-1">
+            <div class="symptomCard">
+              <img
+                class="symptomsIcons"
+                src="{{url_for('static',filename='assets/symptoms/Icon awesome-heartbeat.svg')}}"
+                alt="symptomsIcons"
+              />
+              <p>Pain or discomfort in the centre of the chest; and/or.</p>
+            </div>
+            <div class="symptomCard">
+              <img
+                class="symptomsIcons"
+                src="{{url_for('static',filename='assets/symptoms/shoulder.svg')}}"
+                alt="symptomsIcons"
+              />
+              <p>
+                Pain or discomfort in the arms, the left shoulder, elbows, jaw,
+                or back.
+              </p>
+            </div>
+            <div class="symptomCard">
+              <img
+                class="symptomsIcons"
+                src="{{url_for('static',filename='assets/symptoms/numb.svg')}}"
+                alt="symptomsIcons"
+              />
+              <p>
+                Numbness of the face, arm, or leg, especially on one side of the
+                body.
+              </p>
+            </div>
+            <div class="symptomCard">
+              <img
+                class="symptomsIcons"
+                src="{{url_for('static',filename='assets/symptoms/eye.svg')}}"
+                alt="symptomsIcons"
+              />
+              <p>Difficulty seeing with one or both eyes.</p>
+            </div>
+          </div>
+          <div id="heartImg">
+            <img src="{{url_for('static',filename='assets/symptoms/bb.svg')}}" alt="heart" />
+          </div>
+          <div id="symtpoms-2">
+            <div class="symptomCard">
+              <img
+                class="symptomsIcons"
+                src="{{url_for('static',filename='assets/symptoms/breathable.svg')}}"
+                alt="Icon"
+              />
+              <p>Confusion, difficulty speaking or understanding speech.</p>
+            </div>
+            <div class="symptomCard">
+              <img
+                class="symptomsIcons"
+                src="{{url_for('static',filename='assets/symptoms/fatigue.svg')}}"
+                alt="Icon"
+              />
+              <p>
+                Difficulty walking, dizziness and/or loss of balance or
+                coordination.
+              </p>
+            </div>
+            <div class="symptomCard">
+              <img
+                class="symptomsIcons"
+                src="{{url_for('static',filename='assets/symptoms/Layer 31.svg')}}"
+                alt="Icon"
+              />
+              <p>Severe headache with no known cause; and/or.</p>
+            </div>
+            <div class="symptomCard">
+              <img
+                class="symptomsIcons"
+                src="{{url_for('static',filename='assets/symptoms/sleep.svg')}}"
+                alt="Icon"
+              />
+              <p>Fainting or unconsciousness.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Preventions -->
+       <div class="container">
+        <section  id="preventions">
+          <h2>Prevention</h2>
+          <div id="preventionsCards">
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img
+                  src="{{url_for('static',filename='assets/Preventions/NjYf0Neh6t1URGS+KGNHp5dfck4tS9SY9Ka34GzbSc6MCpEzFyG9zSn36SHW0vKF9rdsa9ylGp251EB_XuEu9TIABoj32k8XPFdXA2aoryqaqyV_WFyPH1jphoesxUokXyjDpwjlsUAEaUlsUroJxA.svg')}}"
+                  alt="preventionImg"
+                />
+              </div>
+              <h4>Control your blood pressure</h4>
+            </div>
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img
+  
+                  src="{{url_for('static',filename='assets/vegat2.svg')}}"
+                  alt="preventionImg"
+                />
+              </div>
+              <h4>Eat a healthy diet.</h4>
+            </div>
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img class="" src="{{url_for('static',filename='assets/donuts.svg')}}" alt="preventionImg" />
+              </div>
+              <h4>
+                Keep your cholesterol and triglyceride levels under control.
+              </h4>
+            </div>
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img class="" src="{{url_for('static',filename='assets/measure.svg')}}" alt="preventionImg" />
+              </div>
+              <h4>Stay at a healthy weight</h4>
+            </div>
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img
+                  src="{{url_for('static',filename='assets/Preventions/DBRHb+W8RCWhxJePvweJXP9By4GoGgpiI7pmCQL0awiRU6MKSqu3pB2kVU93jT+AIdodIjfjECR6n0xP8jUGUtFLFUmWM79Prwm8vpsTn1yqtXYl+UaoWrHCAmq9fhuOyAhwKDbeLlPM++6mFb_IIe.svg')}}"
+                  alt="preventionImg"
+                />
+              </div>
+              <h4>Get regular exercise.</h4>
+            </div>
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img
+                  src="{{url_for('static',filename='assets/Preventions/+H4_PTGi1DlT9xYgFl+S5RLsZWwhnAaQB_uh4wtLQf63rgbw_VGTX_GYvYhfEwJ18K0Pwfskbpt8i3iCqJSUxA5DrS92CFGOovAzTKYwI1VsINnaoJSTEX1vbQjEGDqKHvXx13NeTd2rPUAXWGlpU9.svg')}}"
+                  alt="preventionImg"
+                />
+              </div>
+              <h4>Limit alcohol</h4>
+            </div>
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img
+                  src="{{url_for('static',filename='assets/Preventions/y5Sag0AwShRRmJ_gVf5qD9fr59sPnLzioWVSC+dMkat+a9Uuet9o3R2MCwfEg8z8Upc75XrmzRUaikZe6+UWIylaN2ofPb0mt29n+x4Fajqa5l0XhrpKEoHImj0zneGu9KTyBnXBZ5Jq4PykyhmwfG.svg')}}"
+                  alt="preventionImg"
+                />
+              </div>
+              <h4>Manage stress</h4>
+            </div>
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img
+                  src="{{url_for('static',filename='assets/Preventions/2bnzeCJwWQY8PE4xwINJhshmBSIeREjqIRvOtQb7Kxk8MwdNHoDYhSX5N5zu11sD0yTKXFuD07L_1Sgw5Wz0OveiFlfyn_AfTq447aU+F_dIsZzoVX1DGbuPIjcdBTAKEDlLiQsABhUc05sPl9hDts.svg')}}"
+                  alt="preventionImg"
+                />
+              </div>
+              <h4>Manage diabetes</h4>
+            </div>
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img
+                  src="{{url_for('static',filename='assets/Preventions/5NSChoeUYWRaEX_6qmvyNaR8WJ5Y8QncHKa5X1GitznjNXCNtWRB2+QV2kkA1dRbpOlV5TTjeT7JVsuyMhF_qmpW5nHse9zxmUKs0cOM0MiTGCDKj0OzjBU2mMtpfBsdEqUV9jrSHsWcV3Og3EmsUN.svg')}}"
+                  alt="preventionImg"
+                />
+              </div>
+              <h4>Make sure that you get enough sleep.</h4>
+            </div>
+            <div class="preventionCard">
+              <div class="imgFrame">
+                <img
+                  src="{{url_for('static',filename='assets/Preventions/GyfUR49mqo7fjpAh1XhHbsz+kqpgE85M8E9WIIEs6PfF3935Oun_8zkg_mlWKXxp1P7WrMG6RXwkjGR2R5fXoaAMWjzVEWJaBHZDLPw9zvE5x+s6LfJnGlvfglf9Qt_csrqA0_ipx_paDva1YHm++9.svg')}}"
+                  alt="preventionImg"
+                />
+              </div>
+              <h4>Don't smoke</h4>
+            </div>
+          </div>
+        </section>
+        </div>
+
+        
+         <!-- Form section -->
+      <section class="container" id="formSection">
+        <h2 style="text-align: center">Prediction</h2>
+        <form id="patientForm"  action="/predict" method="POST">
+{#        <form id="patientForm" >#}
+          <!-- range -->
+          <div class="question">
+            <label class="inputLabel" for="age">Age</label>
+            <div class="range-slider inputItem">
+              <input
+                class="range-slider__range"
+                type="range"
+                value="47"
+                min="0"
+                max="100"
+                name="age"
+                required
+              />
+              <span class="range-slider__value">47</span>
+            </div>
+          </div>
+          <!-- Radio -->
+          <div class="question" id="genderQuestion">
+            <label class="inputLabel" for="gender">Gender</label>
+            <div class="inputItem inputRadioContainer ">
+              <p class="RadioPlace">
+                <input id="Male" type="radio" name="gender" value="1" required/>
+                <label for="Male" class="radioLabel">Male</label>
+              </p>
+              <p>
+                <input id="Female" type="radio" name="gender" value="0" required />
+                <label for="Female" class="radioLabel">Female</label>
+              </p>
+            </div>
+          </div>
+          <!-- dropdown menu -->
+          <div class="question">
+            <div class="inputLabel">Chest pain</div>
+
+            <div class="inputItem select">
+              <select id="selected" name="chestPain" onclick="changeBorder()" required>
+                <option value="" disabled selected>Choose an option</option>
+                <option value="1">Typical Angina</option>
+                <option value="2">Atypical Angina</option>
+                <option value="3">Non-Anginal Pain</option>
+                <option value="0">Asymptomatic</option>
+              </select>
+            </div>
+          </div>
+          <!-- Range -->
+          <div class="question">
+            <label class="inputLabel" for="bloodPressure"
+              >Resting blood<br> pressure (mm/Hg)</label
+            >
+            <div class="range-slider inputItem">
+              <input
+                class="range-slider__range"
+                type="range"
+                value="240"
+                min="40"
+                max="370"
+                name="bloodPressure"
+                required
+              />
+              <span class="range-slider__value">240</span>
+            </div>
+          </div>
+          <!-- Range -->
+          <div class="question">
+            <label class="inputLabel" for="cholesterol"
+              >Cholesterol level (mg/dl)</label
+            >
+            <div class="range-slider inputItem">
+              <input
+                class="range-slider__range"
+                type="range"
+                value="150"
+                min="30"
+                max="3165"
+                name="cholesterol"
+                required
+              />
+              <span class="range-slider__value">150</span>
+            </div>
+          </div>
+          <!-- Radio -->
+          <div class="question" id="genderQuestion">
+            <label class="inputLabel" for="gender"
+              >Is your fasting blood sugar <br>more than 120 mg/dl ?</label>
+            <div class="inputItem inputRadioContainer">
+              <p class="RadioPlace">
+                <input id="yes-1" type="radio" name="bloodSugar" value="1" required />
+                <label for="yes-1" class="radioLabel">Yes</label>
+              </p>
+              <p>
+                <input id="no-1" type="radio" name="bloodSugar" value="0" required/>
+                <label for="no-1" class="radioLabel">No</label>
+              </p>
+            </div>
+          </div>
+          <!-- Dropdown menu -->
+          <div class="question">
+            <div class="inputLabel">
+              What is your latest resting <br> electrocardio- graphic results?
+            </div>
+
+            <div class="inputItem select">
+              <select id="selected1" name="electrocardio" onclick="changeBorder1()" required>
+                <option value="" disabled selected>
+                  Choose an option
+                </option>
+                <option value="0">
+                  Normal
+                </option>
+                  <option value="1">
+                  Having ST-T wave abnormality
+                </option>
+                <option value="2">
+                  Having left ventricular hypertrophy
+                </option>
+              </select>
+            </div>
+          </div>
+          <!-- Range -->
+          <div class="question">
+            <label class="inputLabel" for="heartRate"
+              >Max Heart rate achieved <br>(beats/minute)?</label
+            >
+            <div class="range-slider inputItem">
+              <input
+                class="range-slider__range"
+                type="range"
+                value="350"
+                min="26"
+                max="480"
+                name="heartRate"
+                required
+              />
+              <span class="range-slider__value">350</span>
+            </div>
+          </div>
+          <!-- Radio -->
+          <div class="question" id="genderQuestion">
+            <label class="inputLabel" for="angine"
+              >Do you have Exercise induced angina ?</label
+            >
+            <div class="inputItem inputRadioContainer">
+              <p class="RadioPlace">
+                <input id="yes-2" type="radio" name="angine" value="1" required />
+                <label for="yes-2" class="radioLabel">Yes</label>
+              </p>
+              <p>
+                <input id="no-2" type="radio" name="angine" value="0" required/>
+                <label for="no-2" class="radioLabel">No</label>
+              </p>
+            </div>
+          </div>
+
+          <!-- Range -->
+          <div class="question">
+            <label class="inputLabel" for="st"
+              >ST depression induced by <br>exercise relative to rest?</label
+            >
+            <div class="range-slider inputItem">
+              <input
+                class="range-slider__range"
+                type="range"
+                value="8"
+                min="0"
+                max="10"
+                name="st"
+                required
+              />
+              <span class="range-slider__value">8</span>
+            </div>
+          </div>
+          <!-- Dropdown menu -->
+          <div class="question">
+            <div class="inputLabel">
+              Slope of the peak exercise<br> (ST segment)?
+            </div>
+
+            <div class="inputItem select">
+              <select id="selected2" name="slope" onclick="changeBorder2()" required>
+                <option value="" disabled selected>Choose an option</option>
+                <option value="2">Up sloping</option>
+                <option value="1">Flat</option>
+                <option value="0">Down sloping</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Dropdowm menu --> 
+          <!-- <div class="question">
+            <div class="inputLabel">Thalassemia status ?</div>
+
+            <div class="inputItem select">
+              <select id="selected3" name="Thalassemia" onclick="changeBorder3()" required>
+                <option value="2">Normal</option>
+                <option value="1">Fixed</option>
+                <option value="3 ">Reversible</option>
+              </select>
+            </div>
+          </div> -->
+
+            <!-- Dropdowm menu --> 
+         <!-- <div class="question">
+            <div class="inputLabel">Vessels coloured by flouroscopy ?</div>
+
+            <div class="inputItem select">
+              <select id="selected4" name="ca" onclick="changeBorder4()" required>
+                <option value="0">Absent</option>
+                <option value="1">Present</option>
+              </select>
+            </div>
+          </div> -->
+          
+
+          <!-- Radio -->
+          <!--
+          <div class="question" id="genderQuestion">
+            <label class="inputLabel" for="gender"
+              >Do you have Exercise induced angina ?</label
+            >
+            <div class="inputItem inputRadioContainer">
+              <p>
+                <input id="1" type="radio" name="radio-group" />
+                <label for="1">1</label>
+              </p>
+              <p>
+                <input id="2" type="radio" name="radio-group" />
+                <label for="2">2</label>
+              </p>
+              <p>
+                <input id="3" type="radio" name="radio-group" />
+                <label for="3">3</label>
+              </p>
+              <p>
+                <input id="4" type="radio" name="radio-group" />
+                <label for="4">4</label>
+              </p>
+            </div>
+          </div>  -->
+          <!-- Dropbox --> <!-- Cancelled after combaining differeft datasets-->
+         <!-- <div class="question">
+            <div class="inputLabel">Thalassemia status ?</div>
+
+            <div class="inputItem select">
+              <select>
+                <option value="Normal">Normal</option>
+                <option value="Fixed ">Fixed</option>
+                <option value="defect ">defect</option>
+                <option value="Reversible ">Reversible</option>
+                <option value="defect ">defect</option>
+              </select>
+            </div>
+          </div> -->
+          <div id="analyzeBtnContainer">
+            <button id="analyzeBtn">Analyze and predict</button>
+          </div>
+        </form>
+       
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footerContainer container">
+          <div class="footerMenuContainer">
+            <ul>
+              <div class="navContainer container-1">
+                <li>
+                  <a data-target="main">Home</a>
+                </li>
+                <li>
+                  <a data-target="generalInformation">General information</a>
+                </li>
+                <li>
+                  <a data-target="statistics">Statistics</a>
+                </li>
+              </div>
+              <div class="navContainer container-2">
+                <li>
+                  <a data-target="symptoms">Symptoms</a>
+                </li>
+                <li>
+                  <a data-target="preventions">Prevention</a>
+                </li>
+                <li>
+                  <a data-target="formSection">Prediction</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+         <!--<div class="logoFooter">
+            <img class="footerHeartIcon" src="{{url_for('static',filename='assets/heartIcon.svg')}}" alt="" />
+          </div>
+        </div> -->
+      </footer>
+
+      <script src="{{url_for('static',filename='scripts/inputRange.js')}}"></script>
+      <script src="{{url_for('static',filename='scripts/script.js')}}"></script>
+    </body>
+  </html>

@@ -1,0 +1,45 @@
+<header>
+	<style>
+		body {
+		  background-color:white;
+		  display: flex;
+  		  justify-content: center;
+		}
+
+		.content{
+			display: flex;
+			justify-content: center;
+			height: 500px;
+			width: 700px;
+		}
+
+		#outputImage{
+			height: 100%;
+			width: 100%;
+		} 
+
+		button{
+			border: 0;
+  			color: white;
+			padding: 15px 25px;
+			background-color: #ef4f51;
+			transition: background-color 300ms ease-in-out;
+			border-radius: 10px;
+			font-size: 22px;
+			margin-left: 45%;
+		}
+		</style>
+</header>
+
+<body>
+	<div class="content" >
+		<div id="outputImage" >
+			<!-- <img  src="{{  url_for('static',filename='assets/'+image)}}" alt="you are safe" height=100% width=100%> -->
+			<img  src="../static/assets/risk.svg" alt="you are safe" height=100% width=100%>
+			<br>
+			<form action="/" method="GET">
+				<button action >Close</button>
+			</form>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,57 @@
+:root {
+    --background-gradient: #ef4f51;
+    --gray: #ffffff;
+    --darkgray: #ef4f51;
+  }
+  
+  select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: black;
+    border-left: 3px solid #eee;
+    border-top: 3px solid #eee;
+    border-bottom: 3px solid #eee;
+    /* background-color: var(--darkgray); */
+    background-image: none;
+    cursor: pointer;
+    border-right: 3px solid #eee;
+  }
+  
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 85%;
+    height: 2.5em;
+    border-radius: 0.25em;
+    border-right: 1px solid #eee;
+    overflow: hidden;
+  }
+  
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 1px;
+    /* background-color: #ef4f51; */
+    transition: 0.25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #ef4f51;
+  }
+  
+  
